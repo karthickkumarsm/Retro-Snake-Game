@@ -29,6 +29,8 @@ font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 25)
 bg=pygame.image.load("snake.jpg").convert()
 pygame.display.flip()
+icon=pygame.image.load("icon.jpg")
+pygame.display.set_icon(icon)
  
  
 def Your_score(score):
