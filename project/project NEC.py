@@ -1,6 +1,7 @@
 import pygame
 import time
 import random
+from pygame import mixer
  
 pygame.init()
  
