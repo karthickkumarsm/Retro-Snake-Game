@@ -3,11 +3,11 @@ RETRO SNAKE GAME
 import pygame
 import time
 import random
+from pygame import mixer
  
 pygame.init()
  
 white = (255, 255, 255)
-yellow = (255, 255, 102)
 black = (0, 0, 0)
 red = (213, 50, 80)
 bright_red=(255,0,0)
