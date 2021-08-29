@@ -62,6 +62,9 @@ def gameLoop():
  
     foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
+   
+    mixer.music.load('mixkit-arcade-game-complete-or-approved-mission-205.wav')
+    mixer.music.play(-1)
  
     while not game_over:
  
@@ -70,6 +73,7 @@ def gameLoop():
             message("You Lost! Press C-Play Again or Q-Quit", red)
             Your_score(Length_of_snake - 1)
             pygame.display.update()
+            mixer.music.pause()
  
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
